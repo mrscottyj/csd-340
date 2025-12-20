@@ -1,1 +1,27 @@
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
 
+/* Heading styles */
+h1, h2, h3, h4 {
+    background-color: #2E4053;
+    color: #FFFFFF;
+    border: 1px solid #D6A800;
+    padding: 10px;
+}
+
+/* Anchor styles */
+a {
+    color: #2E86C1;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D6A800;
+}
+
+a:visited {
+    color: #1B4F72;
+}
