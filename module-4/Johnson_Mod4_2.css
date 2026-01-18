@@ -1,0 +1,58 @@
+/*
+    Title: Assignment 4.2 CSS Stylesheet
+    Author: Scott Johnson
+    Date: January 15th, 2026
+    CSD-340
+    Description: Styling for book covers image gallery
+*/
+
+/* Center the h1 heading */
+h1 {
+    text-align: center;
+}
+
+/* Apply margin-top to image gallery */
+#image-gallery {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  /* Three equal columns */
+    gap: 20px;  /* Space between grid items */
+}
+
+/* Center the h3 text (book titles) */
+h3 {
+    text-align: center;
+}
+
+/* Center images within figures */
+figure {
+    text-align: center;
+    margin: 0;  /* Remove default margin */
+}
+
+/* Make images responsive */
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style the figcaption text */
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    text-align: center;
+}
+
+/* Style the back link */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    }
