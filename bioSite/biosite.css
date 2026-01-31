@@ -1,0 +1,213 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header and Navigation Styles */
+header {
+    background-color: #2c3e50;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #34495e;
+    border-radius: 4px;
+}
+
+/* Main Content Styles */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    min-height: calc(100vh - 200px);
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Paragraph Styles */
+p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+/* Landing Page Styles */
+#hero {
+    background-color: #3498db;
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+#hero h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+#hero p {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#intro-section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#highlights {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.highlight-card {
+    flex: 1;
+    min-width: 250px;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.highlight-card h3 {
+    color: #3498db;
+    margin-top: 0;
+}
+
+/* About Page Styles */
+#about-header,
+#hobbies-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#biography,
+#education,
+#experience,
+#skills {
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#skills ul {
+    list-style-position: inside;
+    padding-left: 1rem;
+}
+
+#skills ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+#skills ul li:last-child {
+    border-bottom: none;
+}
+
+/* Hobbies Page Styles */
+#hobbies-header p {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+}
+
+#hobbies-content {
+    margin-top: 2rem;
+}
+
+.hobby-section {
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#other-interests {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#other-interests ul {
+    list-style-position: inside;
+    padding-left: 1rem;
+}
+
+#other-interests ul li {
+    padding: 0.5rem 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
