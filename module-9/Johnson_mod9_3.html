@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+    Scott Johnson
+    Assignment 9.3
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Assignment 9.3 – JavaScript Part 1" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Web Development, Bellevue University" />
+    <meta name="author" content="Scott Johnson" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CSD 340 Web Development with HTML and CSS</title>
+
+    <script>
+        var dampValue      = "damp";
+        var burningValue   = "burning";
+        var satisfyingValue = "satisfying";
+        var solidValue     = "solid";
+    </script>
+
+</head>
+
+<body>
+
+    <p>Assignment 9.3: JavaScript – Part 1</p>
+
+    <p>
+        I woke up before the sun came up. Coffee was already brewing because I set it the night before.
+        I had a full day planned and I wasn't going to waste a single minute of it.
+    </p>
+
+    <p>
+        By 6am my bike was loaded and I was heading up the mountain. The trail was still
+        <span id="damp">__________</span>
+        from the night before and the dirt was perfect. I hit the first drop and let the bike do its thing.
+        My tires gripped, my body stayed loose, and I just flowed through it. Section after section I pushed harder.
+        My lungs were <span id="burning">__________</span> but I didn't care. This is what I live for.
+    </p>
+
+    <p>
+        After a few hours I rolled back to camp. Most people would sit down and rest. I grabbed my tools instead.
+        I had been working on a wood rack for the camp kitchen and I wanted to finish it before dark.
+        I measured twice, cut once, and started putting it together. There is something
+        <span id="satisfying">__________</span>
+        about building something with your hands. When it was done it was
+        <span id="solid">__________</span>.
+        It wasn't fancy but it worked and I made it myself.
+    </p>
+
+    <p>
+        I got the fire going as the sun dropped behind the ridge. I sat back and looked around at the trees,
+        the smoke curling up, and the rack I just built sitting there next to the cooler.
+    </p>
+
+    <p>
+        It was a good day. It always is when I get to ride hard and build something.
+    </p>
+
+    <p>
+        <button type="button"
+            onclick="document.getElementById('damp').innerHTML = dampValue">damp</button>
+
+        <button type="button"
+            onclick="document.getElementById('burning').innerHTML = burningValue">burning</button>
+
+        <button type="button"
+            onclick="document.getElementById('satisfying').innerHTML = satisfyingValue">satisfying</button>
+
+        <button type="button"
+            onclick="document.getElementById('solid').innerHTML = solidValue">solid</button>
+        <br />
+    </p>
+
+</body>
+</html>
