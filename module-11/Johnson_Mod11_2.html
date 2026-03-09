@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 30px; }
+        h1 { color: #1a3a5c; }
+        input { padding: 8px; width: 300px; margin-bottom: 10px; }
+        button { padding: 8px 16px; margin-right: 8px; color: white; border: none; cursor: pointer; border-radius: 4px; }
+        #btnAdd { background: green; }
+        #btnDelete { background: red; }
+        #btnSort { background: #2d7dd2; }
+        ul { margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+    <p>Enter a task below, then click "Add" to save it. You can view, delete, or sort entries using the buttons.</p>
+
+    <br>
+    <input type="text" id="taskInput" placeholder="Enter a task" />
+    <br>
+    <button id="btnAdd" onclick="addItem()">Add</button>
+    <button id="btnDelete" onclick="deleteLastItem()">Delete Last Entry</button>
+    <button id="btnSort" onclick="sortItems()">Sort</button>
+
+    <ul id="taskList"></ul>
+
+    <script>
+        var tasks = [];
+
+        function addItem() {
+            var input = document.getElementById("taskInput").value;
+            tasks.push(input);
+            alert("Item: " + input + " Added as Item " + tasks.length);
+            document.getElementById("taskInput").value = "";
+            displayItems();
+        }
+
+        function deleteLastItem() {
+            var removed = tasks.pop();
+            alert("Item Deleted: " + removed);
+            displayItems();
+        }
+
+        function sortItems() {
+            tasks.sort();
+            alert("List has been sorted!");
+            displayItems();
+        }
+
+        function displayItems() {
+            var list = document.getElementById("taskList");
+            list.innerHTML = "";
+            for (var i = 0; i < tasks.length; i++) {
+                var li = document.createElement("li");
+                li.textContent = tasks[i];
+                list.appendChild(li);
+            }
+        }
+    </script>
+
+</body>
+</html>
